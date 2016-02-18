@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>iBeacon Ionic Poc</title>
+
+
+    <!-- compiled css output -->
+    <link href="assets/css/ionic.app.min.css" rel="stylesheet">
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- ionic/angularjs js -->
+    <script src="assets/lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- bower components -->
+
+	<!-- app components -->
+	<script src="app/app.controller.js"></script>
+	<script src="app/components/monitoring/monitoring.controller.js"></script>
+  <script src="app/components/ranging/ranging.controller.js"></script>
+    <!-- your app's js -->
+    <script src="app/app.routes.js"></script>
+    <script src="app/app.js"></script>
+  </head>
+  <body ng-app="iBeaconIonicPoc">
+
+    <ion-nav-bar class="nav-title-slide-ios7 bar-light">
+        <ion-nav-back-button class="button-icon ion-arrow-left-c">
+        </ion-nav-back-button>
+    </ion-nav-bar>
+
+  	<ion-nav-view></ion-nav-view>
+
+  </body>
+</html>

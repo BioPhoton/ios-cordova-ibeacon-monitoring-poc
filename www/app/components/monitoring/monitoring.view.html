@@ -1,0 +1,20 @@
+<ion-view title="Monitoring">
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+  </ion-nav-buttons>
+
+  <ion-content>
+
+    <button class="button button-positive" ng-click="monitoring.startMonitoring()">
+      Start
+    </button>
+    <button class="button button-positive" ng-click="monitoring.stopMonitoring()">
+      Stop
+    </button>
+
+    <pre ng-repeat="log in app.monitoringLogs">
+      {{log | json}}
+    </pre>
+
+  </ion-content>
+</ion-view>
